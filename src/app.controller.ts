@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 import { AppDto } from './app.dto';
 
@@ -8,6 +8,6 @@ export class AppController {
 
   @Post('/api/solve')
   async solve(@Body() appDto: AppDto) {
-    return this.appService.getUniqueArray(appDto.A);
+    return this.appService.getTwoArrayUniqueSum(appDto);
   }
 }
