@@ -24,3 +24,4 @@ $ npm run start:prod
 ```
 
 - Running on port 3000
+- use postman collection file "api-einstein.postman_colletion.json"
